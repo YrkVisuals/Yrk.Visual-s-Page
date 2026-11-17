@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | YRK Visuals</title>
+</head>
+<body>
+<header>
+    <div id="box_header_gauche"><a href="index.html">YRK<span>VISUALS</span></a></div>
+    <div id="box_header_droite">
+        <div id="box_header_galerie"><a href="galerie.html">Gallery</a></div>
+        <div id="box_header_tarifs"><a href="tarifs.html">Pricing</a></div>
+        <div id="box_header_contact"><a href="contact.html">Contact</a></div>
+        <div id="box_header_langue" tabindex="0" aria-label="Choose a language">
+            <span>Language</span>
+            <div class="menu-langues"><a href="../page-francais/contact.html" lang="fr">Fran&#231;ais</a><a href="contact.html" lang="en" aria-current="page">English</a></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div id="premierbloc">
+        <p id="eyebrow">Contact</p>
+        <h1 id="titre">Let's talk about<br><span>your project.</span></h1>
+        <p id="description">A car, an idea, a location. Get in touch to create content that feels like you.</p>
+    </div>
+
+    <div id="deuxiemebloc">
+        <div id="contact">
+            <h1>Get in touch</h1>
+            <p>
+                To book a photoshoot, request a quote or simply<br>
+                discuss your project, fill in the form or reach out<br>
+                to me directly on Instagram.
+            </p>
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/yrk.visuals/" target="_blank" rel="noopener noreferrer">@YRK.VISUALS</a>
+        </div>
+        <div id="form">
+            <form action="mailto:yrkvisuals.pro@gmail.com?subject=Photoshoot%20enquiry&amp;body=Hello%2C%0A%0AI%27m%20getting%20in%20touch%20about%20a%20photoshoot.%0A%0AHere%20are%20the%20details%20of%20my%20project%3A%0A%0AThank%20you%20for%20getting%20back%20to%20me.%0A%0AKind%20regards%2C" method="post" enctype="text/plain">
+                <p>Contact me by :</p>
+                <div class="checkbox-row">
+                    <label><input type="radio" name="contact-method" value="telephone"> Phone</label>
+                    <label><input type="radio" name="contact-method" value="mail"> Mail</label>
+                    <label><input type="radio" name="contact-method" value="instagram"> Instagram</label>
+                    <label><input type="radio" name="contact-method" value="tiktok"> TikTok</label>
+                </div>
+                <input type="text" id="nom" name="Name" required placeholder="Your name">
+                <input type="email" id="mail" name="Email address" placeholder="Your email">
+                <div class="telephone-field">
+                    <input type="tel" id="telephone" name="Phone number" placeholder="Your phone number">
+                </div>
+                <input type="text" id="voiture" name="Car" required placeholder="Your car">
+                <select id="formule" name="Package" required>
+                    <option value="" selected disabled>Choose a package</option>
+                    <option value="starter">Starter</option>
+                    <option value="cinematic">Cinematic</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <textarea id="textarea" name="Message" rows="4" placeholder="Tell me about your project"></textarea>
+                <div class="contact-actions">
+                    <a class="contact-action" data-method="telephone" href="https://wa.me/?text=Hello%2C%0A%0AI%27m%20getting%20in%20touch%20about%20a%20photoshoot.%0A%0AHere%20are%20the%20details%20of%20my%20project%3A%0A%0AThank%20you%20for%20getting%20back%20to%20me.%0A%0AKind%20regards%2C" target="_blank" rel="noopener noreferrer">Continue on WhatsApp</a>
+                    <button class="contact-action" data-method="mail" type="submit">Open email draft</button>
+                    <a class="contact-action" data-method="instagram" href="https://www.instagram.com/yrk.visuals/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+                    <a class="contact-action" data-method="tiktok" href="https://www.tiktok.com/@yrk.visuals" target="_blank" rel="noopener noreferrer">Open TikTok</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="box_footer_gauche">
+        <h4 id="text_footer_reseaux">SOCIALS</h4>
+        <a id="bouton_footer_insta" href="https://www.instagram.com/yrk.visuals/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
+        <a id="bouton_footer_tiktok" href="https://www.tiktok.com/@yrk.visuals" target="_blank" rel="noopener noreferrer" aria-label="TikTok"></a>
+    </div>
+    <div id="box_footer_millieu"><h2 id="text_footer_millieu">&copy; 2026 YRK Visuals</h2></div>
+    <div id="box_footer_droite"><h3 id="text_footer_droite">PHOTO &bull; VIDEO &bull; AUTOMOTIVE</h3></div>
+</footer>
+</body>
+</html>

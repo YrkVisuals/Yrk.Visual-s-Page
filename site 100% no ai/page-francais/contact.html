@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs</title>
+</head>
+<body>
+
+<!--header-->
+
+<header>
+    <div id="box_header_gauche">
+        <a href="index.html">
+                YRK<span>VISUALS</span>
+        </a>
+    </div>
+    <div id="box_header_droite">
+        <div id="box_header_galerie">
+            <a href="galerie.html">
+                galerie
+            </a>
+        </div>
+        <div id="box_header_tarifs">
+            <a href="tarifs.html">
+                tarifs
+            </a>
+        </div>
+        <div id="box_header_contact">
+            <a href="contact.html">
+                contact
+            </a>
+        </div>
+        <div id="box_header_langue" tabindex="0" aria-label="Choisir une langue">
+            <span>Langue</span>
+            <div class="menu-langues"><a href="contact.html" lang="fr" aria-current="page">Fran&#231;ais</a><a href="../page-anglais/contact.html" lang="en">English</a></div>
+        </div>
+    </div>
+</header>
+
+<!--main-->
+<!--premier bloc-->
+
+<main>
+    <div id="premierbloc">
+        <p id="eyebrow">
+            contact
+        </p>
+        <h1 id="titre">
+            parlons de
+            <br>
+            <span>
+            votre projet.
+            </span>
+        </h1>
+        <p id="description">
+            Une voiture, une idée, un lieu. Contacte-moi pour créer un contenu qui te ressemble.
+        </p>
+    </div>
+
+<!--deuxieme bloc-->
+
+    <div id="deuxiemebloc">
+        <div id="contact">
+            <h1>
+                contactez-moi
+            </h1>
+            <p>
+                Pour réserver un shooting, demander un devis ou simplement
+                <br>
+                discuter de votre projet, remplissez le formulaire ou contactez-moi
+                <br>
+                directement sur Instagram.
+            </p>
+            <h3>
+                instagram
+            </h3>
+            <a href="https://www.instagram.com/yrk.visuals/" target="_blank">
+                @YRK.VISUALS
+            </a>
+        </div>
+        <div id="form">
+            <form action="mailto:yrkvisuals.pro@gmail.com?subject=Demande%20de%20shooting&amp;body=Bonjour%2C%0A%0AJe%20me%20permets%20de%20vous%20contacter%20pour%20une%20demande%20de%20shooting.%0A%0AVoici%20les%20d%C3%A9tails%20de%20mon%20projet%20%3A%0A%0AMerci%20pour%20votre%20retour.%0A%0ACordialement%2C" method="post" enctype="text/plain">
+                <p>Contactez-moi par :</p>
+                <div class="checkbox-row">
+                    <label><input type="radio" name="contact-method" value="telephone"> T&eacute;l&eacute;phone</label>
+                    <label><input type="radio" name="contact-method" value="mail"> Mail</label>
+                    <label><input type="radio" name="contact-method" value="instagram"> Instagram</label>
+                    <label><input type="radio" name="contact-method" value="tiktok"> TikTok</label>
+                </div>
+                <input type="text" id="nom" name="Nom" required placeholder="Votre nom">
+
+                <input type="email" id="mail" name="Adresse e-mail" placeholder="Votre email">
+                <div class="telephone-field">
+                    <input type="tel" id="telephone" name="T&eacute;l&eacute;phone" placeholder="Votre num&eacute;ro">
+                </div>
+
+                <input type="text" id="voiture" name="Voiture" required placeholder="Votre voiture">
+
+                <select id="formule" name="Formule souhaitée" required>
+                    <option value="" selected disabled>Choisir une formule</option>
+                    <option value="starter">Starter</option>
+                    <option value="cinematic">Cinematic</option>
+                    <option value="premium">Premium</option>
+                </select>
+
+                <textarea id="textarea" name="Message" rows="4" placeholder="décrivez moi votre projet"></textarea>
+
+                <div class="contact-actions">
+                    <a class="contact-action" data-method="telephone" href="https://wa.me/?text=Bonjour%2C%0A%0AJe%20me%20permets%20de%20vous%20contacter%20pour%20une%20demande%20de%20shooting.%0A%0AVoici%20les%20d%C3%A9tails%20de%20mon%20projet%20%3A%0A%0AMerci%20pour%20votre%20retour.%0A%0ACordialement%2C" target="_blank" rel="noopener noreferrer">Continuer sur WhatsApp</a>
+                    <button class="contact-action" data-method="mail" type="submit">Ouvrir le brouillon e-mail</button>
+                    <a class="contact-action" data-method="instagram" href="https://www.instagram.com/yrk.visuals/" target="_blank" rel="noopener noreferrer">Ouvrir Instagram</a>
+                    <a class="contact-action" data-method="tiktok" href="https://www.tiktok.com/@yrk.visuals" target="_blank" rel="noopener noreferrer">Ouvrir TikTok</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<!--footer-->
+
+<footer>
+    <div id="box_footer_gauche">
+        <h4 id="text_footer_reseaux">RESEAUX</h4>
+        <a id="bouton_footer_insta" href="https://www.instagram.com/yrk.visuals/" target="_blank"></a>
+        <a id="bouton_footer_tiktok" href="https://www.tiktok.com/@yrk.visuals" target="_blank"></a>
+    </div>
+
+    <div id="box_footer_millieu">
+        <h2 id="text_footer_millieu">© 2026 YRK Visuals</h2>
+    </div>
+
+    <div id="box_footer_droite">
+        <h3 id="text_footer_droite">PHOTO • VIDEO • AUTOMOBILE</h3>
+    </div>
+</footer>
+<script>
+    const formuleDemandee = new URLSearchParams(window.location.search).get("formule");
+    if (["starter", "cinematic", "premium"].includes(formuleDemandee)) {
+        document.getElementById("formule").value = formuleDemandee;
+    }
+</script>
+</body>
+</html>
