@@ -1,5 +1,0 @@
--faire le carrousel
--trouver des images
--finir la galerie
--faire en sorte que les infos soient enregistrées dans un ficher Excel
--faire un truc pouur choisir le contact (insta / tiktok / mail) et suivant quoi, m'envoyer vers un site different
